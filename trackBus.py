@@ -20,7 +20,7 @@ class Vehicle(object):
      
 
 def getVehiclesByRoute(routeIdentifier):        
-    vehicleURL = "http://www3.septa.org/transitview/bus_route_data/" + routeIdentifier
+    vehicleURL = "http://www3.septa.org/beta/TransitView/" + routeIdentifier
     r = requests.get(vehicleURL)
     j = r.json()
     vehicles = j['bus']
