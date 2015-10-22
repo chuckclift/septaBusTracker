@@ -42,7 +42,7 @@ with open("vehicle_numbers.txt") as v:
     my_busses = v.read()
     my_busses = my_busses.split()
    
-vehicle_list = [_ for _ in vehicle_list if _.vehicleID in my_busses]
+vehicle_list = [a for a in vehicle_list if a.vehicleID in my_busses]
 
 
 report_string = "Bus #    Route\n"
